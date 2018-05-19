@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/healthuh"
+    tools:context="com.example.gurpreet.gurpreetsethi_comp_304_lab2_exer1.CausinesActivity">
+
+
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Select Causine"
+    android:layout_gravity="center_horizontal"
+    android:textSize="40sp"
+    />
+
+<RadioGroup
+    android:id="@+id/rbGroup"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="5"
+    android:paddingLeft="70dp">
+
+    <RadioButton
+        android:id="@+id/rbAmerican"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="American"
+        android:onClick="goToAmRest"/>
+
+    <RadioButton
+        android:id="@+id/rbItalian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Italian"
+        android:onClick="goToItRest"/>
+
+    <RadioButton
+        android:id="@+id/rbChinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Chinese"
+        android:onClick="goToChRest"/>
+
+    <RadioButton
+        android:id="@+id/rbIndian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Indian"
+        android:onClick="goToInRest"/>
+
+    <RadioButton
+        android:id="@+id/rbInternational"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="International"
+        android:onClick="goToIntRest"/>
+</RadioGroup>
+
+</LinearLayout>
